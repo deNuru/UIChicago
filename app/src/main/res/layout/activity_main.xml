@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewFlipper
+        android:id="@+id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="265dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/picture1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture2"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture2"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture3"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture4"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture4"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture5"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture5"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture6"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture6"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture7"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture7"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture8"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture8"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/picture9"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/picture10"
+            android:src="@drawable/picture10"/>
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/nextPrevID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/categoriesID"
+        >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/categoriesID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageSwitcher">
+
+        <Button
+            android:id="@+id/aboutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="About"/>
+
+        <Button
+            android:id="@+id/contactID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Contact us"/>
+
+        <Button
+            android:id="@+id/applyID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Apply"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/uicID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoriesID"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/descriptionID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/uicID"
+        android:padding="16dp"
+        android:text="Tap on the picture to view more!"
+        android:gravity="center_horizontal"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/yesID"
+        android:layout_width="189dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="#B71C1C"
+        android:text="Yes!"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/sparkyID"
+        android:layout_width="180dp"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="84dp"
+        android:visibility="gone"
+        android:src="@drawable/sparky" />
+
+</RelativeLayout>
